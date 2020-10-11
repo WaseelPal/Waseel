@@ -4,7 +4,9 @@ import { Provider } from 'react-redux';
 
 const AppContainer = (props) => (
   <Provider store={props.store}>
-    <h2>Waseel Web App</h2>
+    <div>
+      <h2>Waseel Web App</h2>
+    </div>
   </Provider>
 );
 
