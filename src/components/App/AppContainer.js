@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';
+import history from '../../lib/history';
+import AppView from './AppView';
+
 
 const AppContainer = (props) => (
   <Provider store={props?.store}>
-    <div>
-      <h2>Waseel Web App</h2>
-    </div>
+    <AppView history={history} />
   </Provider>
 );
 
