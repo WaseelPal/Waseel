@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-height: 1rem;
+  margin: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .logo {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 20%;
+  color: black;
+}
+
+nav input {
+  width: 15rem;
+  border-radius: 0.2rem;
+  border: #075df2 soild 0.2rem;
+  height: 2rem;
+  font-size: 1rem;
+}
+
+nav ul a {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+nav ul li :hover {
+  border-bottom: 2px solid #075df2;
+}
+
+button {
+  width: 5rem;
+  height: 2.5rem;
+  line-height: normal;
+  background-color: #075df2;
+  color: white;
+  border-radius: 0.6rem;
+}
+
+@media all and (max-width: 768px) {
+  body {
+    display: none;
+  }
+}
+/*# sourceMappingURL=header.css.map */
