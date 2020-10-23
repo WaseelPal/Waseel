@@ -5,8 +5,8 @@ function Header() {
 return (
   <div>
     <nav>
-      <div className="logo"> Logo</div>
-      <ul className="nav-links">
+      {/* <div> Logo</div> */}
+      <ul>
         <li>
           <a href="/">Home</a>
         </li>
@@ -17,9 +17,10 @@ return (
           <a href="/"> Cart</a>
         </li>
       </ul>
-      <input placeholder="search..."></input>
 
+      <input placeholder="search..."></input>
       <button> Sign in </button>
+      <i className="fas fa-bars burger"></i>
 
     </nav>
   </div>

@@ -20,7 +20,6 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   min-height: 1rem;
-  margin: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -35,23 +34,27 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 20%;
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
   color: black;
 }
 
-nav input {
-  width: 15rem;
-  border-radius: 0.2rem;
-  border: #075df2 soild 0.2rem;
-  height: 2rem;
+input {
+  border-radius: 0.3rem;
+  border: 2px solid #075df2;
+  height: 2.5rem;
   font-size: 1rem;
+  line-height: normal;
+  width: 30rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 nav ul a {
   font-size: 1rem;
   font-weight: 700;
+  margin-left: 4rem;
+  color: black;
 }
 
 nav ul li :hover {
@@ -64,12 +67,40 @@ button {
   line-height: normal;
   background-color: #075df2;
   color: white;
-  border-radius: 0.6rem;
+  border-radius: 0.3rem;
+  margin: 1rem;
+}
+
+i {
+  display: none !important;
+  font-size: 2rem;
+  color: #075df2;
 }
 
 @media all and (max-width: 768px) {
-  body {
-    display: none;
+  i {
+    display: block;
+    font-size: 2rem;
+    color: #075df2;
+  }
+  nav ul {
+    display: block;
+    position: absoulte;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background-color: #075df2;
+    opacity: 0.9;
+    width: 50%;
+  }
+  nav ul a {
+    color: #e9e6e6;
+  }
+  nav ul li {
+    padding-top: 2rem;
+  }
+  nav ul li :hover {
+    border-bottom: 2px solid white;
   }
 }
 /*# sourceMappingURL=header.css.map */

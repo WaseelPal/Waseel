@@ -8,7 +8,7 @@ const AppContainer = (props) => (
   <Provider store={props?.store}>
     <div>
       <Header />
-      <h2>Waseel Web App</h2>
+      {/* <h2>Waseel Web App</h2> */}
 
     </div>
   </Provider>
