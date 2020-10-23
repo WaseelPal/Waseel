@@ -1,10 +1,14 @@
 $primaryColor: #075df2;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+nav i {
+  color: blue;
+  font-size: 100px;
+}
 li {
   list-style-type: none;
 }
@@ -17,9 +21,9 @@ nav {
   min-height: 1rem;
   align-items: center;
 }
-nav .logo {
-  font-size: 3rem;
-  font-weight: 700;
+nav div {
+  font-size: 1rem;
+  font-weight: 500;
 }
 nav ul {
   display: flex;
@@ -55,16 +59,15 @@ button {
   margin: 1rem;
 }
 i {
-  display: none !important;
-  font-size: 2rem;
+  font-size: 2rem !important;
   color: $primaryColor;
 }
 
 @media all and (max-width: 768px) {
   i {
-    display: block;
-    font-size: 2rem;
-    color: $primaryColor;
+    font-size: 2.5rem !important;
+    color: red;
+    cursor: pointer;
   }
 
   nav ul {
@@ -76,6 +79,7 @@ i {
     background-color: $primaryColor;
     opacity: 0.9;
     width: 50%;
+    transform: translateX(-500px) !important;
   }
   nav ul a {
     color: rgb(233, 230, 230);
@@ -86,5 +90,8 @@ i {
   }
   nav ul li :hover {
     border-bottom: 2px solid white;
+  }
+  nav div {
+    display: none !important;
   }
 }
