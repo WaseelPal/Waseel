@@ -3,26 +3,22 @@ import "../Styles/header.scss"
 
 function Header() {
   const [open, setOpen] = useState(false);
-
-
 return (
   <div>
     <nav>
       <div className="logo"> Logo</div>
-      <ul style={{ transform: open ? "translateX(0px)" : "translateX(-500px) " }}>
+      <ul style={{ transform: open ? "translateX(0px)" : ""}}>
         <li>
           <a href="/">Home</a>
         </li>
         <li>
           <a href="/">Contact</a>
         </li>
-        <li>
-          <a href="/"> Cart</a>
-        </li>
+      
       </ul>
       <input placeholder="search..."></input>
-      <button> Sign in </button>
-      <i onClick= {() => setOpen(!open)} className="fas fa-bars"></i>
+      <button onClick={()=> console.log("clicked")}> Sign in </button>
+      <i onClick= {() => setOpen(!open)} className="fas fa-bars .burger"></i>
     </nav>
     
   </div>
