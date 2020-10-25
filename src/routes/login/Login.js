@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux';
 import { userLoginRequestPost } from '../../modules/user';
 
 const Login = () => {
@@ -21,8 +21,6 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    console.log({ email, password });
 
     const payload = {
       email,

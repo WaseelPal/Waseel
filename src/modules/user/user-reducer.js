@@ -19,11 +19,11 @@ const ACTION_HANDLERS = () => ({
     ...state,
     isLoading: true
   }),
-  [USER_LOGIN_REQUEST_POST_SUCCESS]: (state, action) => ({
+  [USER_LOGIN_REQUEST_POST_SUCCESS]: (state) => ({
     ...state,
     isLoading: false
   }),
-  [USER_LOGIN_REQUEST_POST_FAILURE]: (state, action) => ({
+  [USER_LOGIN_REQUEST_POST_FAILURE]: (state) => ({
     ...state,
     isLoading: false
   }),

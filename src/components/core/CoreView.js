@@ -7,7 +7,7 @@ import '../../styles/_base.scss';
 import Login from '../../routes/login';
 
 const CoreView = () => (
-  <div id="app-content" className="container-fluid">
+  <div id="app-content">
     <Switch>
       <Route
         exact
