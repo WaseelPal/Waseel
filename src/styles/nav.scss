@@ -1,0 +1,127 @@
+$primaryColor: #075df2;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav i {
+  color: blue;
+  font-size: 100px;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav div {
+  font-size: 1rem;
+  font-weight: 500;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around !important;
+  color: black;
+}
+.logo {
+  font-size: 2rem;
+}
+input {
+  border-radius: 0.3rem;
+  border: 2px solid $primaryColor;
+  height: 2.5rem;
+  font-size: 1rem;
+  line-height: normal;
+  width: 25rem;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+div input {
+  color: $primaryColor;
+  font-size: 1.2rem !important;
+}
+
+span {
+  color: $primaryColor;
+  font-size: 1.2rem !important;
+  position: absolute;
+}
+nav ul a {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-left: 4rem;
+  color: black;
+}
+nav ul li :hover {
+  border-bottom: 2px solid $primaryColor;
+}
+
+button {
+  width: 5rem;
+  height: 2.5rem;
+  line-height: normal;
+  background-color: $primaryColor;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  margin: 1rem;
+}
+i {
+  display: none !important;
+}
+
+@media all and (max-width: 768px) {
+  i {
+    display: block !important;
+    font-size: 2.5rem !important;
+    cursor: pointer;
+  }
+
+  nav ul {
+    display: block;
+    position: fixed;
+    background-color: $primaryColor;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    transform: translateX(-500px);
+    transition: 0.2s ease-in-out;
+  }
+  button {
+    background-color: $primaryColor;
+    border: 1px solid white;
+    color: white;
+    width: 10rem !important;
+    line-height: 2rem;
+    display: block;
+    cursor: pointer;
+    position: absoulte;
+  }
+  .logo {
+    color: red;
+  }
+
+  nav ul a {
+    color: rgb(248, 245, 245);
+    margin-left: 1rem !important;
+  }
+
+  nav ul li {
+    padding-top: 2rem;
+  }
+  nav ul li :hover {
+    border-bottom: 2px solid white;
+  }
+  nav div {
+    display: none;
+  }
+}
