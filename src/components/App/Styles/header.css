@@ -24,7 +24,6 @@ nav {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  min-height: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -44,15 +43,32 @@ nav ul {
   color: black;
 }
 
+.logo {
+  font-size: 2rem;
+}
+
 input {
   border-radius: 0.3rem;
   border: 2px solid #075df2;
   height: 2.5rem;
   font-size: 1rem;
   line-height: normal;
-  width: 30rem;
+  width: 25rem;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+div input {
+  color: #075df2;
+  font-size: 1.2rem !important;
+}
+
+span {
+  color: #075df2;
+  font-size: 1.2rem !important;
 }
 
 nav ul a {
@@ -72,6 +88,7 @@ button {
   line-height: normal;
   background-color: #075df2;
   color: white;
+  cursor: pointer;
   border-radius: 0.3rem;
   margin: 1rem;
 }
@@ -82,18 +99,17 @@ i {
 
 @media all and (max-width: 768px) {
   i {
-    font-size: 2.5rem !important;
-    color: red;
-    cursor: pointer;
     display: block !important;
+    font-size: 2.5rem !important;
+    cursor: pointer;
   }
   nav ul {
     display: block;
-    position: absoulte;
-    height: 50vh;
+    position: fixed;
     background-color: #075df2;
     opacity: 0.9;
-    width: 50%;
+    top: 0;
+    left: 0;
     -webkit-transform: translateX(-500px);
             transform: translateX(-500px);
     -webkit-transition: 0.2s ease-in-out;
@@ -103,8 +119,11 @@ i {
     background-color: #075df2;
     border: 1px solid white;
     color: white;
-    width: 50%;
+    width: 10rem !important;
     line-height: 2rem;
+    display: block;
+    cursor: pointer;
+    position: absoulte;
   }
   nav ul a {
     color: #f8f5f5;

@@ -18,7 +18,6 @@ a {
 nav {
   display: flex;
   justify-content: space-around;
-  min-height: 1rem;
   align-items: center;
 }
 nav div {
@@ -30,15 +29,30 @@ nav ul {
   justify-content: space-around !important;
   color: black;
 }
+.logo {
+  font-size: 2rem;
+}
 input {
   border-radius: 0.3rem;
   border: 2px solid $primaryColor;
   height: 2.5rem;
   font-size: 1rem;
   line-height: normal;
-  width: 30rem;
+  width: 25rem;
+  display: inline-block;
+  box-sizing: border-box;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+div input {
+  color: $primaryColor;
+  font-size: 1.2rem !important;
+}
+
+span {
+  color: $primaryColor;
+  font-size: 1.2rem !important;
 }
 nav ul a {
   font-size: 1rem;
@@ -49,12 +63,14 @@ nav ul a {
 nav ul li :hover {
   border-bottom: 2px solid $primaryColor;
 }
+
 button {
   width: 5rem;
   height: 2.5rem;
   line-height: normal;
   background-color: $primaryColor;
   color: white;
+  cursor: pointer;
   border-radius: 0.3rem;
   margin: 1rem;
 }
@@ -64,22 +80,18 @@ i {
 
 @media all and (max-width: 768px) {
   i {
-    font-size: 2.5rem !important;
-    color: red;
-    cursor: pointer;
     display: block !important;
+    font-size: 2.5rem !important;
+    cursor: pointer;
   }
-  //   input {
-  //     display: none;
-  //   }
 
   nav ul {
     display: block;
-    position: absoulte;
-    height: 50vh;
+    position: fixed;
     background-color: $primaryColor;
     opacity: 0.9;
-    width: 50%;
+    top: 0;
+    left: 0;
     transform: translateX(-500px);
     transition: 0.2s ease-in-out;
   }
@@ -87,9 +99,13 @@ i {
     background-color: $primaryColor;
     border: 1px solid white;
     color: white;
-    width: 50%;
+    width: 10rem !important;
     line-height: 2rem;
+    display: block;
+    cursor: pointer;
+    position: absoulte;
   }
+
   nav ul a {
     color: rgb(248, 245, 245);
     margin-left: 1rem !important;
