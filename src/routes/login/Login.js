@@ -1,7 +1,8 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { userLoginRequestPost } from '../../modules/user';
-import Header from "../../components/Nav/Header"
+
+
 const Login = () => {
   const dispatch = useDispatch();
   const [email, setEmail] = React.useState('');
@@ -35,9 +36,7 @@ const Login = () => {
 
   return (
     <div>
-      <Header />
       <h2>Login page</h2>
-
       <form onSubmit={handleSubmit}>
         <div className="email">
           Email:{" "}

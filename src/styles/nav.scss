@@ -24,30 +24,10 @@ nav div {
   font-size: 1rem;
   font-weight: 500;
 }
-nav ul {
+.ul-links {
   display: flex;
   justify-content: space-around !important;
   color: black;
-}
-.logo {
-  font-size: 2rem;
-}
-input {
-  border-radius: 0.3rem;
-  border: 2px solid $primaryColor;
-  height: 2.5rem;
-  font-size: 1rem;
-  line-height: normal;
-  width: 25rem;
-  display: inline-block;
-  box-sizing: border-box;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-div input {
-  color: $primaryColor;
-  font-size: 1.2rem !important;
 }
 
 span {
@@ -64,8 +44,20 @@ nav ul a {
 nav ul li :hover {
   border-bottom: 2px solid $primaryColor;
 }
+.input {
+  border-radius: 0.3rem;
+  border: 2px solid $primaryColor;
+  height: 2.5rem;
+  font-size: 1rem;
+  line-height: normal;
+  width: 25rem;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 
-button {
+.sign-in-button {
   width: 5rem;
   height: 2.5rem;
   line-height: normal;
@@ -86,27 +78,28 @@ i {
     cursor: pointer;
   }
 
-  nav ul {
+  .ul-links {
     display: block;
     position: fixed;
     background-color: $primaryColor;
     opacity: 0.9;
     top: 0;
     left: 0;
-    transform: translateX(-500px);
+    transform: translateX(0px);
     transition: 0.2s ease-in-out;
   }
-  button {
+  .sign-in-button {
     background-color: $primaryColor;
     border: 1px solid white;
     color: white;
-    width: 10rem !important;
+    width: 5rem;
+    margin-left: 25rem;
+    right: 0 !important;
     line-height: 2rem;
     display: block;
     cursor: pointer;
-    position: absoulte;
   }
-  .logo {
+  .inputContainer {
     color: red;
   }
 
