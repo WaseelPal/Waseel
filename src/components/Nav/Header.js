@@ -25,7 +25,7 @@ function Header() {
             type="text"
             placeholder="search..."
           ></input>
-          <span className="fa fa-search" />
+          <span className="fa fa-search"/>
         </div>
         <Link to="login">
           <button

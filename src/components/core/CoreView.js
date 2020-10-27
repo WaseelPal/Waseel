@@ -12,9 +12,8 @@ import Contact from "../../components/Pages/Contact"
 const CoreView = () => (
   <div id="app-content">
     <Route exact path="/" component={Header} />
-    <Route exact path="/login" component={Login} />
-
     <Switch>
+      <Route exact path="/login" component={Login} />
       <Route exact path="/contact" component={Contact} />
       <Route exact path="/cart" component={Cart} />
     </Switch>

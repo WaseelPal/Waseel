@@ -28,33 +28,36 @@ nav div {
   display: flex;
   justify-content: space-around !important;
   color: black;
+  // margin-left: 1rem;
 }
-
-span {
+nav span {
   color: $primaryColor;
   font-size: 1.2rem !important;
-  position: absolute;
+  position: fixed;
+  margin: 0.5rem;
 }
+
 nav ul a {
   font-size: 1rem;
-  font-weight: 700;
-  margin-left: 4rem;
+  font-weight: 600;
   color: black;
+  margin: 4rem;
 }
 nav ul li :hover {
   border-bottom: 2px solid $primaryColor;
 }
 .input {
   border-radius: 0.3rem;
+  position: relative;
+  margin: 0 auto;
+  text-indent: 1rem !important;
   border: 2px solid $primaryColor;
   height: 2.5rem;
   font-size: 1rem;
   line-height: normal;
-  width: 25rem;
+  width: 15rem;
   display: inline-block;
   box-sizing: border-box;
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .sign-in-button {
@@ -76,6 +79,7 @@ i {
     display: block !important;
     font-size: 2.5rem !important;
     cursor: pointer;
+    margin-right: 2rem !important;
   }
 
   .ul-links {
@@ -85,7 +89,8 @@ i {
     opacity: 0.9;
     top: 0;
     left: 0;
-    transform: translateX(0px);
+    height: 100vh;
+    transform: translateX(-500px);
     transition: 0.2s ease-in-out;
   }
   .sign-in-button {
@@ -93,14 +98,15 @@ i {
     border: 1px solid white;
     color: white;
     width: 5rem;
-    margin-left: 25rem;
+    margin-left: 22rem;
     right: 0 !important;
     line-height: 2rem;
     display: block;
     cursor: pointer;
   }
-  .inputContainer {
-    color: red;
+  nav .input {
+    display: flex;
+    background-color: yellow;
   }
 
   nav ul a {
