@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
 import { uiReducer } from '../modules/ui';
+import { userReducer } from '../modules/user';
 
 export const makeRootReducerFactory = ({
   combineReducers,
@@ -12,7 +13,8 @@ export const makeRootReducerFactory = ({
 
 export const makeRootReducer = makeRootReducerFactory({
   combineReducers,
-  ui: uiReducer
+  ui: uiReducer,
+  user: userReducer,
 });
 
 export default makeRootReducer;
