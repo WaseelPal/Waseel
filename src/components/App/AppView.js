@@ -11,6 +11,6 @@ const AppView = (props) => (
 
 AppView.propTypes = {
   history: PropTypes.object.isRequired,
-}
+};
 
 export default AppView;

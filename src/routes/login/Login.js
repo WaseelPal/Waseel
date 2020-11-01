@@ -11,13 +11,13 @@ const Login = () => {
     const { target: { value } = {} } = e;
 
     setEmail(value);
-  }
+  };
 
   const handlePasswordChange = (e) => {
     const { target: { value } = {} } = e;
 
     setPassword(value);
-  }
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -31,7 +31,7 @@ const Login = () => {
 
     setPassword('');
     setEmail('');
-  }
+  };
 
   return (
     <div>
@@ -49,6 +49,6 @@ const Login = () => {
       </form>
     </div>
   );
-}
+};
 
 export default Login;
