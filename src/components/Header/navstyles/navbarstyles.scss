@@ -1,8 +1,8 @@
+@import "../../../styles/variables";
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 nav i {
@@ -19,14 +19,9 @@ a {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
 nav div {
@@ -35,16 +30,13 @@ nav div {
 }
 
 .ul-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute !important;
-      justify-content: space-around !important;
+  justify-content: space-around !important;
   color: black;
 }
 
 nav span {
-  color: #075df2;
+  color: $primaryColor;
   font-size: 1.2rem !important;
   position: fixed;
   margin: 0.5rem;
@@ -57,30 +49,28 @@ nav ul a {
   margin: 4rem;
 }
 
-nav ul li :hover {
-  border-bottom: 2px solid #075df2;
+.ul-links li :hover {
+  border-bottom: 2px solid $primaryColor;
 }
-
 .input {
   border-radius: 0.3rem;
   position: relative;
   margin: 0 auto;
   text-indent: 1rem !important;
-  border: 2px solid #075df2;
+  border: 2px solid $primaryColor;
   height: 2.5rem;
   font-size: 1rem;
   line-height: normal;
   width: 15rem;
   display: inline-block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .sign-in-button {
   width: 5rem;
   height: 2.5rem;
   line-height: normal;
-  background-color: #075df2;
+  background-color: $primaryColor;
   color: white;
   cursor: pointer;
   border-radius: 0.3rem;
@@ -91,55 +81,57 @@ i {
   display: none !important;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 868px) {
   i {
     display: block !important;
     font-size: 2.5rem !important;
     cursor: pointer;
     margin-right: 2rem !important;
   }
+
   .ul-links {
     display: block;
     position: fixed;
-    background-color: #075df2;
+    background-color: $primaryColor;
     opacity: 0.9;
     top: 0;
     left: 0;
     height: 100vh;
-    -webkit-transform: translateX(-500px);
-            transform: translateX(-500px);
-    -webkit-transition: 0.2s ease-in-out;
+    transform: translateX(-500px);
     transition: 0.2s ease-in-out;
   }
+
   .sign-in-button {
-    background-color: #075df2;
+    background-color: $primaryColor;
     border: 1px solid white;
     color: white;
-    width: 5rem;
     margin-left: 22rem;
+    padding: 0.2rem;
     right: 0 !important;
     line-height: 2rem;
     display: block;
     cursor: pointer;
   }
+
   nav .input {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     background-color: yellow;
   }
+
   nav ul a {
-    color: #f8f5f5;
+    color: rgb(248, 245, 245);
     margin-left: 1rem !important;
   }
-  nav ul li {
+
+  .ul-links li {
     padding-top: 2rem;
   }
-  nav ul li :hover {
+
+  .ul-links li :hover {
     border-bottom: 2px solid white;
   }
+
   nav div {
     display: none;
   }
 }
-/*# sourceMappingURL=navbar.css.map */

@@ -1,6 +1,5 @@
 import React, {useState} from "react"
-// import { Link } from "react-router-dom"
-import styles from "../../styles/navbar.scss"
+import styles from '../Header/navstyles/navbarstyles.scss';
 
 function Header() {
 
@@ -19,15 +18,12 @@ function Header() {
                         className={styles["input"]}
                         type="text"
                         placeholder ="search..."
-                    ></input>
-                    {/* <span className="fa fa-search"></span> */}
+                    />
                 </div >
-
-            <button className={styles["sign-in-button"]} onClick={() => console.log("clicked")}>
+            <button className={styles["sign-in-button"]}>
             {" "}
-            Sign in{" "}
+            Login{" "}
           </button>
-
          <i onClick={() => setOpen(!open)} className=" fas fa-bars"></i>
       </nav >
     </div >
