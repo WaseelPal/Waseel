@@ -5,9 +5,10 @@ import {
 } from 'react-router-dom';
 import '../../styles/_base.scss';
 import Login from '../../routes/login';
+import styles from './core.scss';
 
 const CoreView = () => (
-  <div id="app-content">
+  <div className={styles['app-container']}>
     <Switch>
       <Route
         exact
