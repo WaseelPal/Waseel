@@ -12,6 +12,7 @@
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
     "lint": "eslint ./src --ignore-path .gitignore",
+    "lint:css": "stylelint \"src/**/*.scss\"",
     "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
   },
   "repository": {
@@ -27,18 +28,18 @@
   "homepage": "https://github.com/waseelPal/Waseel#readme",
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint"
+      "pre-commit": "npm run lint && npm run lint:css"
     }
   },
   "dependencies": {
     "@babel/runtime": "^7.12.1",
     "axios": "^0.20.0",
-    "bootstrap-icons": "^1.1.0",
     "history": "^5.0.0",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-icons": "^3.11.0",
     "react-redux": "^7.2.1",
     "react-router-dom": "^5.2.0",
     "redux": "^4.0.5",
@@ -61,6 +62,9 @@
     "husky": "^4.3.0",
     "mini-css-extract-plugin": "^1.0.0",
     "sass-loader": "^10.0.3",
+    "stylelint": "^13.7.2",
+    "stylelint-config-css-modules": "^2.2.0",
+    "stylelint-config-standard": "^20.0.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
