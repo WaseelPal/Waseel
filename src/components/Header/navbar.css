@@ -1,0 +1,114 @@
+.left-section .ul-links {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: left !important;
+      -ms-flex-align: left !important;
+          align-items: left !important;
+  color: black;
+  list-style-type: none;
+}
+
+.left-section .ul-links li {
+  display: inline;
+}
+
+.left-section .ul-links li :hover {
+  border-bottom: 2px solid #075df2;
+}
+
+.left-section .ul-links a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 0.9rem 1rem;
+  text-decoration: none;
+}
+
+.left-section .ul-links .logo {
+  float: left;
+  margin: 0.8rem;
+  left: 0 !important;
+  font-weight: 900;
+}
+
+.right-section {
+  float: right;
+}
+
+.right-section .sign-in-button {
+  height: 2.8rem;
+  width: 7rem;
+  float: right;
+  font-size: 0.9rem;
+  background-color: #075df2;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+.right-section .create-an-account {
+  height: 2.5rem;
+  top: 0rem;
+  margin-right: 2.3rem;
+  background-color: transparent;
+  color: #075df2;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+
+.right-section .burger {
+  font-size: 2.5rem;
+  cursor: pointer;
+  float: right;
+  display: none;
+}
+
+@media all and (max-width: 768px) {
+  .burger {
+    font-size: 2.5rem;
+    cursor: pointer;
+    float: right;
+  }
+  .left-section .ul-links {
+    position: fixed;
+    display: block !important;
+    background-color: #f0f0f0;
+    opacity: 1;
+    top: 0;
+    color: white;
+    left: 0;
+    height: 100vh;
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  .left-section li {
+    display: block !important;
+    color: white;
+  }
+  .right-section .create-an-account {
+    background-color: transparent;
+    border: none;
+    color: #075df2;
+    cursor: pointer;
+  }
+  .right-section .sign-in-button {
+    background-color: #075df2;
+    border: 1px solid white;
+    color: white;
+    padding: 0.2rem;
+    line-height: 2rem;
+    cursor: pointer;
+  }
+  .ul-links li {
+    padding-top: 2rem;
+  }
+  .ul-links li :hover {
+    border-bottom: 2px solid #075df2;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */
