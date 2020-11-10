@@ -1,0 +1,185 @@
+@import "../../styles/variables";
+
+.topnav {
+  overflow: hidden;
+}
+
+.right-section {
+  position: relative;
+  float: right;
+
+  .burger {
+    font-size: 2.5rem;
+    cursor: pointer;
+    float: right;
+    display: none;
+  }
+}
+
+.dropdown-content a {
+  float: none !important;
+  color: black;
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.left-section {
+  margin-top: 1rem;
+
+  .ul-links {
+    color: black;
+    list-style-type: none;
+    margin-left: 3rem;
+
+    li :hover {
+      position: relative;
+      color: $primaryColor;
+    }
+
+    a {
+      float: left;
+      color: black;
+      padding: 0.8rem 2rem;
+      text-decoration: none;
+    }
+
+    .logo {
+      position: fixed;
+      float: left;
+      left: 0;
+      margin: 0.8rem;
+      font-weight: 900;
+    }
+
+    .right-section {
+      position: relative;
+
+      .account {
+        height: 2.5rem;
+        border: none;
+        background-color: transparent;
+        color: black;
+        font-weight: 600;
+        margin-right: 1rem;
+        cursor: pointer;
+        border-radius: 0.3rem;
+      }
+
+      .signin {
+        height: 2.8rem;
+        width: 7rem;
+        float: right;
+        font-size: 0.9rem;
+        background-color: $primaryColor;
+        color: white;
+        cursor: pointer;
+        border-radius: 0.3rem;
+        border: none;
+      }
+
+      .signin:hover {
+        background-color: rgb(9, 59, 210);
+      }
+
+      .account:hover {
+        color: $primaryColor;
+      }
+    }
+  }
+}
+
+.dropdown {
+  float: left;
+}
+
+.dropdown .dropbtn {
+  font-size: 1rem;
+  border: none;
+  color: rgb(8, 8, 8);
+  padding: 0.8rem 1.3rem;
+  background-color: transparent;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  color: $primaryColor;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 10rem;
+  border-radius: 1rem;
+  z-index: 1;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(235, 232, 232);
+  color: $primaryColor;
+  border-radius: 1rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media all and (max-width: 968px) {
+  .burger {
+    font-size: 2.5rem;
+    cursor: pointer;
+    float: right;
+    display: block !important;
+  }
+
+  .left-section {
+    margin: 0;
+
+    .ul-links {
+      position: fixed;
+      display: b;
+      padding: 0;
+      margin: 0 !important;
+      background-color: rgb(235, 235, 235);
+      color: white;
+      left: 0;
+      width: 7em;
+      height: 50rem;
+      transform: translateX(-500px);
+      transition: 0.2s ease-in-out;
+    }
+
+    li {
+      display: block !important;
+    }
+
+    li:hover {
+      color: $primaryColor;
+    }
+
+    .logo {
+      display: none;
+    }
+
+    .right-section {
+      padding-top: 22rem;
+
+      .signin {
+        height: 1.5rem;
+      }
+
+      .account {
+        height: 1.5rem;
+        font-size: 0.8rem;
+        margin-left: 1rem;
+      }
+    }
+
+    .dropdown {
+      display: none;
+    }
+  }
+}
