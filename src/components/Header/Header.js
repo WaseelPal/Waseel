@@ -7,40 +7,41 @@ function Header() {
 
   const [open, setOpen] = useState(false);
   return (
-    <div className={styles['topnav']}>
-      <section className={styles['left-section']}>
-        <ul className={styles['ul-links']}
-          style={{ transform: open ? 'translateX(0px)' : '' }} >
-          <div className={styles['logo']}> Wasel </div>
-          <li><a href="/cart">Sale</a> </li>
-          <li><a href="/contact”"> Contact</a></li >
-          <li><a href="/About"> About</a></li >
-          <li><a href="/About"> New!</a></li >
-          <div className={styles['dropdown']}>
-            <button className={styles['dropbtn']}>Departments
-              <i className="fa fa-caret-down"></i>
-            </button>
-            <div className={styles['dropdown-content']}>
-              <a href="#">Men</a>
-              <a href="#">Women</a>
-              <a href="#">kids</a>
-              <a href="#">Electronics</a>
-              <a href="#">Outdoors</a>
-              <a href="#">Accessories</a>
+    <div>
+      <nav className={styles['topnav']}>
+        <section className={styles['left-section']}>
+          <ul className={styles['ul-links']}
+            style={{ transform: open ? 'translateX(0px)' : '' }} >
+            <div className={styles['logo']}> Wasel </div>
+            <li><a>Sale</a> </li>
+            <li><a> Contact</a></li >
+            <li><a> About</a></li >
+            <li><a > New!</a></li >
+            <div className={styles['dropdown']}>
+              <button className={styles['dropbtn']}>Departments
+                <i className="fa fa-caret-down"></i>
+              </button>
+              <div className={styles['dropdown-content']}>
+                <a>Men</a>
+                <a>Women</a>
+                <a>kids</a>
+                <a>Electronics</a>
+                <a>Outdoors</a>
+                <a>Accessories</a>
+              </div>
             </div>
-          </div>
-          <div className={styles['right-section']}>
-            <button className={styles['signin']}> SIGN IN</button>
-            <button className={styles['account']} >Create Account</button>
-          </div>
-        </ul >
+            <div className={styles['right-section']}>
+              <button className={styles['signin']}> SIGN IN</button>
+              <button className={styles['account']} >Create Account</button>
+            </div>
+          </ul >
       
-      </section>
+        </section>
 
-      <section className={styles['right-section']}>
-        <i className={styles['burger']}  onClick={() => setOpen(!open)} > <HiMenu /></i>
-      </section>
-      
+        <section className={styles['right-section']}>
+          <i className={styles['burger']}  onClick={() => setOpen(!open)} > <HiMenu /></i>
+        </section>
+      </nav>
     </div >
     
   );
