@@ -1,7 +1,7 @@
 @import "../../styles/variables";
 
-* {
-  margin: 0;
+.topnav {
+  overflow: hidden;
 }
 
 .right-section {
@@ -110,14 +110,18 @@
 
 .dropdown-content {
   display: none;
+  border-radius: 1rem;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #f2f2f2;
   min-width: 10rem;
+  cursor: pointer;
   z-index: 1;
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: rgb(211, 207, 207);
+  border-radius: 1rem;
+  color: $primaryColor;
 }
 
 .dropdown:hover .dropdown-content {
